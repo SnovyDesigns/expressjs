@@ -3,7 +3,7 @@ const path = require('path');
 const Q = require('q');
 
 function file (filename) {
-	return path.join(__dirname, 'database', filename);
+	return path.join(__dirname, 'database', filename); // eslint-disable-line
 }
 
 function getNote (fileName) {

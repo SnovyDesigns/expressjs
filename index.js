@@ -24,6 +24,6 @@ app.post('/updateNote/:note', function(req, res) {
 
 app.listen(3000);
 
-app.use(function(req, res, next) {
+app.use(function(req, res, next) { // eslint-disable-line
 	res.status(404).send('Wybacz, nie mogliśmy odnaleźć tego, czego żądasz!');
 });
